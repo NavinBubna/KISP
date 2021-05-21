@@ -7,67 +7,62 @@
     <meta name="keywords" content="Security" />
     <meta name="description" content="..." />
     <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <title>KISP</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
   <body>
-
-    <header>
-      <nav class="nav collapsible">
-        <a class="nav__brand" href="/"><img class="logo" src="images/KISP3.gif" alt=""/></a>
-        <svg class="icon icon--white nav__toggler">
-          <use xlink:href="images/sprite.svg#menu"></use>
-        </svg>
-          <ul class="list nav__list collapsible__content">
-            <li class="nav__items abc"><a href="#">Login</a></li>
-            <li class="nav__items"><a href="#">Register</li>
-          </ul>
-      </nav>
-    </header>
+    <div id="nav-placeholder"></div>
 
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1x2">
         <header class="block__header hero__content">
           <h1 class="block__heading">Keep It Secure And Private</h1>
-          <p class="hero__tagline">KISP is a online web portal developed by the students of Revolution 
-            Club in Vishwakarma University. Here we discuss the latest cyber security news and learn about 
-            various attack methods. This open source platform is free to use and we encourage you to find 
-            vulnerabilities and report them to us.</p>
+          <p class="hero__tagline">
+            KISP is a online web portal developed by the students of Revolution
+            Club in Vishwakarma University. Here we discuss the latest cyber
+            security news and learn about various attack methods. This open
+            source platform is free to use and we encourage you to find
+            vulnerabilities and report them to us.
+          </p>
         </header>
         <img class="hero__image" src="/images/intro6.png" alt="" />
       </div>
     </section>
-    
+
     <div class="slideshow-container">
-    
-    <div class="mySlides fade">
-      <img src="images/grid2.jpg" style="width:100%">
+      <div class="mySlides fade">
+        <img src="images/grid2.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/grid1.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/grid3.jpg" style="width: 100%" />
+      </div>
     </div>
-    
-    <div class="mySlides fade">
-      <img src="images/grid1.jpg" style="width:100%">
-    </div>
-    
-    <div class="mySlides fade">
-      <img src="images/grid3.jpg" style="width:100%">
-    </div>
-    
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-      <span class="dot"></span> 
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
     </div>
 
     <div class="popup">
       <div class="box">
         <div class="close">&times;</div>
-        <img class="popup--img" src="images/grid1.jpg" alt="">
-      </div>    
+        <img class="popup--img" src="images/grid1.jpg" alt="" />
+      </div>
     </div>
 
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("nav.html");
+      });
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>
