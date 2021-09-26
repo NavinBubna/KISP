@@ -10,8 +10,28 @@
     <link rel="stylesheet" href="styles.css" />
     <title>KISP</title>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("nav.html");
+      });
+    </script>
+    <script src="js/main.js"></script>
   </head>
   <body>
+    <!-- <header>
+      <nav class="nav collapsible">
+        <a class="nav__brand" href="/"><img class="logo" src="images/KISP3.gif" alt=""/></a>
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+          <ul class="list nav__list collapsible__content">
+            <li class="nav__items abc"><a href="#">Login</a></li>
+            <li class="nav__items"><a href="#">Register</li>
+            <li class="nav__items"><a href="#">HackLab</li>
+          </ul>
+      </nav>
+    </header> -->
+
     <div id="nav-placeholder"></div>
 
     <section class="block block--dark block--skewed-left hero">
@@ -57,12 +77,5 @@
         <img class="popup--img" src="images/grid1.jpg" alt="" />
       </div>
     </div>
-
-    <script>
-      $(function () {
-        $("#nav-placeholder").load("nav.html");
-      });
-    </script>
-    <script src="js/main.js"></script>
   </body>
 </html>
